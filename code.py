@@ -735,3 +735,27 @@ print(z)'''
 # l=lambda a,b: a+b
 # print(l(10,10))
 
+# import math as m
+# num=1.23
+# print(m.floor(num))
+
+# import math
+# print("factorial of 6:",math.factorial(6))
+
+# name, age, marks=input("Enter your details by spaces: ").split()
+# print("Details:",name,age,marks)
+
+current_level = 0
+final_level = 5
+
+# game_completed = True
+#
+# while current_level <= final_level:
+#      if game_completed:
+#         print('You have passed level', current_level)
+#         current_level += 1
+
+# print('Level Ends')
+
+
+
