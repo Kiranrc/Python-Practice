@@ -1,4 +1,3 @@
-
 '''print("hello world")
 
 a=10
@@ -310,6 +309,7 @@ print("Last value of string = ",a[-1])'''
 
 # string built in method
 # CApitalizePython
+
 ''' a="hello and welcome"
 x=a.capitalize()
  print(x)
@@ -745,8 +745,9 @@ print(z)'''
 # name, age, marks=input("Enter your details by spaces: ").split()
 # print("Details:",name,age,marks)
 
-current_level = 0
-final_level = 5
+# current_level = 0
+# final_level = 5
+
 
 # game_completed = True
 #
@@ -757,5 +758,483 @@ final_level = 5
 
 # print('Level Ends')
 
+# mylist=[2,1,4,3,5]
+# a=min(mylist)
+# b=max(mylist)
+# for i in range(len(mylist)):
+#     mylist[i] = (mylist[i] - a) / (b - a)
+#     print(mylist)
+
+# def mylist(nums):
+#     a=min(nums)
+#     b=max(nums)
+#     if b - a ==0:
+#         return [0.0]+[1.0]*(len(nums)-1)
+#     for i in range(len(nums)):
+#         nums[i] =(nums[i]-a)/(b-a)
+#     return nums
+
+# nums=[18.5, 17.0, 18.0, 19.0, 18.0]
+# print("Original list :",nums)
+# print("Rescale :",mylist(nums))
+
+# def test(nums):
+#     a = min(nums)
+#     b = max(nums)
+#     if b - a == 0:
+#         return [0.0] + [1.0] * (len(nums) - 1)
+#     for i in range(len(nums)):
+#         nums[i] = (nums[i] - a) / (b - a)
+#     return nums
+
+# nums = [1,2,3,4,5,2]
+# print("Original list:")
+# print(nums)
+# print("Rescale and shift the numbers of the said list so that they cover the range [0, 1]:")
+# print(test(nums))
+
+# def absnum(n):
+#     all_num=set([0,1,2,3,4,5,6,7,8,9])
+#     n=set([int(i) for i in n])
+#     n=n.symmetric_difference(all_num)
+#     n=sorted(n)
+#     return n
+# print(absnum([9,7,8,9,5,4,8,5,7]))
+
+# d1={"Kiran":"Cricket","Asif":"Football","Pushkar":"Tennis"}
+# a=d1.setdefault("Abhishek","Carrom")
+# x=d1.values()
+# print(x)
+#
+# d2=dict.copy(d1)
+# print(d2)
+# del d1["Asif"]
+# print(d1)
+# d2.pop("Pushkar")
+# print(d2)
+#
+# print(d1)
+# print(d1["Asif"])
+# print(d1.get("Pushikar"))
+# d1.update({"Tanay":"Kabbadi"})
+# print(d1)
+#
+# x=('key','pair','value')
+# y=(0,1,2)
+# d2= dict.fromkeys(x)
+# print(d2)
+
+
+# d1={"Kiran":"Cricket",
+#     "Asif":"Football",
+#     "Pushkar":"Tennis"
+#     }
+# name=input("Enter the name:")
+# print(d1[name])
+
+# class man():
+#     def __init__(silly, name, age):
+#         silly.name = name
+#         silly.age = age
+#
+#     def myfunc(abc):
+#         print("My name is",abc.name)
+#
+#
+#     # def __str__(self):
+#     #     return f"{self.name}({self.age})"
+# m1 = man("kiran",22)
+# del m1.age
+# # print(m1.age)
+# m1.age=40
+# m1.myfunc()
+# print(m1.age)
+
+# for i in range(1,11):
+#     print(i)
+
+# Python 3.x code to demonstrate star pattern
+
+# Function to demonstrate printing pattern of numbers
+
+
+# for i in range(0, 5):
+#     num = 1
+#     for j in range(0, i + 1):
+#         print(num, end=" ")
+#         num = num + 1
+#     print("\r")
+
+# n=int(input("Enter the number: "))
+# sum=0
+# for num in range(n+1):
+#     sum=sum+num
+#     print(sum)
+
+# s: store sum of all numbers
+# s = 0
+# n = int(input("Enter number "))
+# for i in range(1, n + 1, 1):
+#     s += i
+# print("\n")
+# print("Sum is: ", s)
+
+
+# n=int(input("Enter the number:"))
+# for i in range(1,11):
+#     p=n*i
+#     print(p)
+
+# numbers = [12, 75, 150, 180, 145, 525, 50]
+#
+# for i in numbers:
+#     if i>500:
+#         break
+#     if i>150:
+#         continue
+#     if i%5==0:
+#         print(i)
+#     else: pass
+
+    # if i%5==0 and i<500 and i<=150:
+    #     print(i)
+    # else:
+    #     pass
+
+# n = 5
+# k = 5
+# for i in range(0,n+1):
+#     for j in range(k-i,0,-1):
+#         print(j,end=' ')
+#     print()
+
+# for i in range(10):
+#     if i<=4:
+#         print(i)
+#     else: print("Done")
+
+# num1, num2 = 0,1
+# print("FS:")
+# for i in range(10):
+#     print(num1,end=" ")
+#     res=num1+num2
+#     num1=num2
+#     num2=res
+
+# class classp:
+#     def pattern(self):
+#         n = int(input("Enter the number: "))
+#         if n in range(0, 5 and 11, 20):
+#             for i in range(n):
+#                 for j in range(i + 1):
+#                     print("*", end=" ")
+#                 print("\r")
+#         elif n in range(5, 10):
+#             for i in range(n + 1, 0, -1):
+#                 for j in range(0, i - 1):
+#                     print("*", end=' ')
+#                 print(" ")
+#         else:
+#             for i in range(n):
+#                 for j in range(i + 1):
+#                     print("*", end=" ")
+#                 print("\r")
+#
+# p1=classp
+# classp.pattern(self=p1)
+
+
+# FIBONACCI SERIES
+# def fact(count=0):
+#     if nterms>0:
+#         n1, n2 = 0, 1
+#         while count < nterms:
+#             print(n1)
+#             nth = n1 + n2
+#             n1 = n2
+#             n2 = nth
+#             count += 1
+#     else:
+#         n=int(input("Enter positive number: "))
+#         n1, n2 = 0, 1
+#         while count < n:
+#             print(n1)
+#             nth = n1 + n2
+#             n1 = n2
+#             n2 = nth
+#             count += 1
+#
+# nterms = int(input("How many terms?= "))
+#
+# if nterms <= 0:
+#    fact()
+#
+# elif nterms == 1:
+#    print("Fibonacci sequence upto",nterms,"is",0)
+#
+# else:fact()
+
+#FACTORIAL
+# num = int(input("enter: "))
+#
+# factorial = 1
+#
+# if num < 0:
+#    print("Sorry, factorial does not exist for negative numbers")
+# elif num == 0:
+#    print("The factorial of 0 is 1")
+# else:
+#    for i in range(1,num + 1):
+#        factorial = factorial*i
+#    print("The factorial of",num,"is",factorial)
+
+
+# try:
+#     a=5
+#     b='0'
+#     print(a/b)
+# except:
+#     print('Some error occurred.')
+# print("Out of try except blocks.")
+
+
+# class QuadriLateral:
+#     pass
+# class Rectangle(QuadriLateral):
+#     def __init__(self, a,b):
+#         super().__init__(a, b, a, b)
+#
+#     def area(self):
+#         a = self.side1 * self.side2
+#         print("area of rectangle=", a)
+
+
+# def no_notes(a):
+#   Q = [500, 200, 100, 50, 20, 10]
+#   x = 0
+#   for i in range(6):
+#     q = Q[i]
+#     x += int(a / q)
+#     a = int(a % q)
+#   if a > 0:
+#     x = -1
+#   return x
+# print(no_notes(800))
+
+
+# def no_notes(a):
+#     Q = [500, 200, 100, 50, 20, 10]
+#     x = [0, 0, 0, 0, 0, 0]
+#     for i, note in enumerate(Q):
+#         if a >= note:
+#             x[i] = a // note
+#             a = a % note
+#     return x
+# a = int(input("Enter the amount: "))
+# Q = no_notes(a)
+# print("Notes of 500: ", Q[0])
+# print("Notes of 200: ", Q[1])
+# print("Notes of 100: ", Q[2])
+# print("Notes of 50: ", Q[3])
+# print("Notes of 20: ", Q[4])
+# print("Notes of 10: ", Q[5])
+
+# print("Enter numbers:")
+# nums=list(map(int,input().split()))
+# nums.sort()
+# nums.reverse()
+# print("Sorted list:")
+# print(nums)
+
+# def replace_strings(string):
+#     return string.replace("java", "python").replace("python", "java")
+# input_string = input("Enter a string: ")
+# replaced_string = replace_strings(input_string)
+# print("Replaced string:", replaced_string)
+
+# print("Input a text with two words 'Python' and 'Java'")
+# text = input().split()
+# for i in range(len(text)):
+#     if "python" in text[i]:n = text[i].index("python");text[i] = text[i][:n] + "java" + text[i][n + 6:]
+#     elif "java" in text[i]:n = text[i].index("java");text[i] = text[i][:n] + "python" + text[i][n + 4:]
+# print(*text)
+
+# def count_Primes_nums(n):
+#     ctr = 0
+#     for num in range(n):
+#         if num <= 1:
+#             continue
+#         for i in range(2, num):
+#             if (num % i) == 0:
+#                 break
+#         else:
+#             ctr += 1
+#     return ctr
+# print(count_Primes_nums(28))
+# print(count_Primes_nums(160))
+
+# def equal(x,y,z):
+#     result=set([x,y,z])
+#     if len(result)==3:
+#         return 0
+#     else:
+#         return (4-(len(result)))
+#
+# print(equal(1,2,1))
+# print(equal(1,1,1))
+# print(equal(-1,-1,-1))
+
+# def not_comman(set1,set2):
+# 	return not set1.intersection(set2)
+#
+# set1={1,2,3}
+# set2={4,5,6}
+# print(not_comman(set1,set2))
+
+# set1={1,2,3}
+# set2={1,5,3}
+# print(not_comman(set1,set2))
+
+# def remove_intersection(set1,set2):
+# 	return set1-set2
+#
+# set1={1,2,3,4,5,6}
+# set2={7,8,9,4,5,6}
+# result=remove_intersection(set1,set2)
+# print(result)
+
+# grocery = ['bread', 'milk', 'butter']
+# enumerateGrocery = enumerate(grocery)
+#
+# print(type(enumerateGrocery))
+#
+#
+# print(list(enumerateGrocery))
+#
+# enumerateGrocery = enumerate(grocery, 10)
+# print(list(enumerateGrocery))
+
+# class Transaction:
+#     def __init__(self, date, amount, category, description=""):
+#         self.date = date
+#         self.amount = amount
+#         self.category = category
+#         self.description = description
+#
+# class Account:
+#     def __init__(self, name):
+#         self.name = name
+#         self.transactions = []
+#
+#     def add_transaction(self, date, amount, category, description=""):
+#         self.transactions.append(Transaction(date, amount, category, description))
+#
+#     def get_balance(self):
+#         balance = 0
+#         for transaction in self.transactions:
+#             balance += transaction.amount
+#         return balance
+#
+#     def get_expenses_by_category(self):
+#         expenses = {}
+#         for transaction in self.transactions:
+#             if transaction.amount < 0:
+#                 if transaction.category in expenses:
+#                     expenses[transaction.category] += abs(transaction.amount)
+#                 else:
+#                     expenses[transaction.category] = abs(transaction.amount)
+#         return expenses
+#
+# checking = Account("Checking")
+# checking.add_transaction("2022-01-01", 1000, "Deposit")
+# checking.add_transaction("2022-01-02", -50, "Food")
+# checking.add_transaction("2022-01-03", -100, "Entertainment")
+#
+# print("Balance: ", checking.get_balance())
+# print("Expenses by category: ", checking.get_expenses_by_category())
+
+import time
+
+# class Task:
+#     def __init__(self, name, due_date, reminder=None):
+#         self.name = name
+#         self.due_date = due_date
+#         self.reminder = reminder
+#         self.completed = False
+#
+# class ToDoList:
+#     def __init__(self):
+#         self.tasks = []
+#
+#     def add_task(self, name, due_date, reminder=None):
+#         self.tasks.append(Task(name, due_date, reminder))
+#
+#     def complete_task(self, task_index):
+#         self.tasks[task_index].completed = True
+#
+#     def display_tasks(self):
+#         for i, task in enumerate(self.tasks):
+#             print(f"{i + 1}. {task.name} ({task.due_date})")
+#             if task.reminder:
+#                 print(f"    Reminder: {task.reminder}")
+#
+#     def send_reminders(self):
+#         for task in self.tasks:
+#             if task.reminder and not task.completed:
+#                 print(f"Reminder: {task.name} - {task.reminder}")
+#                 time.sleep(1)
+#
+# todo_list = ToDoList()
+# todo_list.add_task("Homework", "2022-01-01", "Study for 2 hours")
+# todo_list.add_task("Gym", "2022-01-02", "Workout for 1 hour")
+# todo_list.add_task("Shopping", "2022-01-03")
+#
+# print("Tasks:")
+# todo_list.display_tasks()
+# todo_list.send_reminders()
+
+from random import randint
+
+#create a list of play options
+t = ["Rock", "Paper", "Scissors"]
+
+#assign a random play to the computer
+computer = t[randint(0,2)]
+
+#set player to False
+player = False
+
+while player == False:
+#set player to True
+    player = input("Rock, Paper, Scissors?\n")
+    if player == computer:
+        print("Tie!")
+    elif player =="Rock":
+        print("You Choose Rock")
+        if computer == "Paper":
+            print("Computer Choose Paper")
+            print("You lose!", computer, "covers", player)
+        else:
+            print("You win!", player, "smashes", computer)
+    elif player == "Paper":
+        print("You Choose Paper")
+        if computer == "Scissors":
+            print("You lose!", computer, "cut", player)
+            print("Computer Choose Scissor")
+        else:
+            print("You win!", player, "covers", computer)
+    elif player == "Scissors":
+        print("You Choose Scissor")
+        if computer == "Rock":
+            print("Computer Choose Rock")
+            print("You lose...", computer, "smashes", player)
+        else:
+            print("You win!", player, "cut", computer)
+    else:
+        print("That's not a valid play. Check your spelling!")
+    #player was set to True, but we want it to be False so the loop continues
+    print(end=" ")
+    player = False
+    computer = t[randint(0,2)]
 
 
