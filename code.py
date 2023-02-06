@@ -1193,48 +1193,207 @@ import time
 # todo_list.display_tasks()
 # todo_list.send_reminders()
 
-from random import randint
+# from random import randint
+#
+# #create a list of play options
+# t = ["Rock", "Paper", "Scissors"]
+#
+# #assign a random play to the computer
+# computer = t[randint(0,2)]
+#
+# #set player to False
+# player = False
+#
+# while player == False:
+# #set player to True
+#     player = input("Rock, Paper, Scissors?\n")
+#     if player == computer:
+#         print("Tie ho gaya re baba!")
+#
+#     elif player =="Rock" and computer == "Paper":
+#         print("You Choose Rock and Computer Choose Paper")
+#         print("You lose!", computer, "covers", player)
+#     elif player=="Paper" and computer == "Rock":
+#         print("You Choose Paper and Computer Choose Rock")
+#         print("You win!", player, "covers", computer)
+#
+#     elif player == "Paper"and computer == "Scissors":
+#         print("You Choose Paper and Computer Choose Scissor")
+#         print("You lose!", computer, "cuts", player)
+#     elif player == "Scissors" and computer == "Paper":
+#         print("You Choose Scissors and Computer Choose Paper")
+#         print("You win!", player, "cuts", computer)
+#
+#     elif player == "Scissors"and computer == "Rock":
+#         print("You Choose Scissor and Computer Choose Rock")
+#         print("You lose...", computer, "smashes", player)
+#     elif player=="Rock" and computer=="Scissors":
+#         print("You Choose Rock and Computer Choose Scissors")
+#         print("You win!", player, "smahses", computer)
+#     else:
+#         print("That's not a valid play. Check your spelling!")
 
-#create a list of play options
-t = ["Rock", "Paper", "Scissors"]
 
-#assign a random play to the computer
-computer = t[randint(0,2)]
+# import random
+# import string
+#
+# def generate_password(length):
+#     password = ''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(length))
+#     return password
+#
+# length = int(input("Enter the length of the password: "))
+# password = generate_password(length)
+# print("Your password is: ", password)
 
-#set player to False
-player = False
 
-while player == False:
-#set player to True
-    player = input("Rock, Paper, Scissors?\n")
-    if player == computer:
-        print("Tie!")
-    elif player =="Rock":
-        print("You Choose Rock")
-        if computer == "Paper":
-            print("Computer Choose Paper")
-            print("You lose!", computer, "covers", player)
-        else:
-            print("You win!", player, "smashes", computer)
-    elif player == "Paper":
-        print("You Choose Paper")
-        if computer == "Scissors":
-            print("You lose!", computer, "cut", player)
-            print("Computer Choose Scissor")
-        else:
-            print("You win!", player, "covers", computer)
-    elif player == "Scissors":
-        print("You Choose Scissor")
-        if computer == "Rock":
-            print("Computer Choose Rock")
-            print("You lose...", computer, "smashes", player)
-        else:
-            print("You win!", player, "cut", computer)
-    else:
-        print("That's not a valid play. Check your spelling!")
-    #player was set to True, but we want it to be False so the loop continues
-    print(end=" ")
-    player = False
-    computer = t[randint(0,2)]
+'''Program to display the Fibonacci sequence up to n-th term'''
+# nterms = int(input("How many terms? "))
+# n1, n2 = 0, 1
+# count = 0
+# # check if the number of terms is valid
+# if nterms <= 0:
+#    print("Please enter a positive integer")
+# # if there is only one term, return n1
+# elif nterms == 1:
+#    print("Fibonacci sequence upto",nterms,":")
+#    print(n1)
+# # generate fibonacci sequence
+# else:
+#    print("Fibonacci sequence:")
+#    while count < nterms:
+#        print(n1)
+#        nth = n1 + n2
+#        # update values
+#        n1 = n2
+#        n2 = nth
+#        count += 1
+
+
+# nterms=int(input("Enter the number: "))
+# n1,n2=0,1
+# count=0
+#
+# if nterms<=0:
+#     print("Enter positive number: ")
+# elif nterms==1:
+#     print(nterms+":")
+#     print(n1)
+#
+# else:
+#     print("Fibonacci series: ")
+#     while count<nterms:
+#         print(n1)
+#         nth=n1+n2
+#         n1=n2
+#         n2=nth
+#         count+=1
+
+# class Person():
+#     def __init__(self,name,id):
+#         self.name=name
+#         self.id=id
+#
+#     def display(self):
+#         print(self.name,self.id)
+#
+# e=Person("kiran",2)
+# e.display()
+#
+# class Emp(Person):
+#     def Print(self):
+#         print("Employees")
+#
+# m=Emp("asid",1)
+# m.Print(),m.display()
+
+
+# num=int(input("Enter the number: "))
+#
+# if num%2==0:
+#     print("Number is Even")
+# else:print("Odd")
+
+# Dict={
+#     "Kiran":'27-9-2000',
+#     "Asif":'1-6-2000',
+#     "Pushkar":'2-9-1995'
+# }
+# Name=input("Enter the name: ")
+# if Name=="Kiran" or "kiran":
+#     print("Kiran's birthdate is "+Dict["Kiran"])
+# elif Name=="Asif":
+#     print("Asif's birthdate is " + Dict["Asif"])
+# elif Name=="Pushkar":
+#     print("Pushkar's Birthdate is " + Dict["Pushkar"])
+# else:print("Data is not available")
+
+# Dict={
+#     "Kiran":'27-9-2000',
+#     "Asif":'1-6-2000',
+#     "Pushkar":'2-9-1995'
+# }
+#
+# print("Welcome to the Birthday game ! We have the birthdays to:")
+# for name in Dict:
+#     print(name)
+#
+# bday=input("Enter the name:")
+# if bday in Dict:
+#     print("Birthday of {}".format(bday))
+#     print(Dict[bday])
+# else:print("bye")
+
+
+# import json
+# Birthday={}
+# with open('Birthday.json', 'r') as f:
+#     Birthday= json.load(f)
+#
+# def add_entry():
+#     name=input("Add name: ").title()
+#     date=input("Add birthdate of {}: ".format(name))
+#     Birthday[name]=date
+#     with open ('Birthday.json','w') as f:
+#         json.dump(Birthday, f)
+#     print("{} was added in birthday dictionary: ".format(name))
+#
+# add_entry()
+
+
+# import json
+#
+# birthday = {}
+# with open('Birthday.json', 'r') as f:
+#           birthday = json.load(f)
+#
+# def add_entry():
+#     name = input('Who do you want to add to the Birthday Dictionnary?\n').title()
+#     date = input('When is {} born?\n'.format(name))
+#     birthday[name] = date
+#     with open('Birthday.json', 'w') as f:
+#         json.dump(birthday, f)
+#     print('{} was added to my birthday list\n'.format(name))
+#
+# add_entry()
+
+# def name_age():
+#     name=input("Enter the name:")
+#     age=input("Enter thae name")
+#     print(name , age)
+#
+# name_age()
+
+# def funct(list=[]):
+#     for i in list:
+#         print(i)
+#
+# funct([10,20,50])
+
+def calculation(a,b):
+    print(a+b)
+    print(a-b)
+
+res=calculation(100,50)
+print(res)
 
 
